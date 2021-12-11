@@ -14,14 +14,21 @@ p.about-p{
 body{
     margin: unset;
 }
+img.picture{
+    display: inline-block;
+    position: relative;
+}
 #demo-reel{
     margin: auto 0px; 
 }
 
 #header-pictures{
-    display: inline-block;
+    display: block;
     margin: auto 0px;
     justify-content: center;
+}
+.header-pictures-container{
+    display: block;
 }
 .nav-button-home{
     text-decoration: unset;
@@ -210,7 +217,8 @@ h3.h3card{
 
 /*-----------------Media Stuff--------------- */
 
-@media (max-width: 400px){
+
+@media (max-width: 760px){
     #header-pictures{
         display: none;
     }
@@ -228,4 +236,44 @@ h3.h3card{
     .flex-container{
         display: inline;
     }
+
+    .card{
+        width: 500px;
+    }
+    h2.h2card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    p.about-p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h3.h3card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .flname{
+        display: block;
+}
+
+    @media(max-width: 500px){
+    .card{
+        width: 300px;
+    }
+    h2.h2card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    p.about-p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h3.h3card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .flname{
+        display: block;
+    }
+}
 }
